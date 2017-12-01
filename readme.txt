@@ -1,3 +1,6 @@
+=== UNC Charlotte Customizations ===
+Added Taxonomy Names to autocomplete list (prepended to the taxonomy term name)
+
 === SearchAutocomplete ===
 Contributors: hereswhatidid
 Donate link: http://hereswhatidid.com/contact/

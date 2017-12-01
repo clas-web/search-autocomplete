@@ -180,7 +180,14 @@ class SearchAutocomplete {
 					'taxonomy' => $term->taxonomy,
 					'postType' => null
 				);
-								
+				
+				// start addition by achapin1@uncc.edu
+				$taxonomyObject = get_taxonomy($term->taxonomy);
+				$taxonomyName = $taxonomyObject->label;
+				$linkTitle  = $taxonomyName." » ".$term->post_title;
+				//$linkTitle  = $term->post_title;
+				// end addition by achapin1@uncc.edu
+				
 				$linkTitle  = apply_filters( 'search_autocomplete_modify_title', $linkTitle, $tempObject );
 				if ( ! in_array( 'taxonomies', $this->options['autocomplete_hotlinks'] ) ) {
 					$linkURL = '#';
