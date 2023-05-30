@@ -184,7 +184,12 @@ class SearchAutocomplete {
 				// start addition by achapin1@uncc.edu
 				$taxonomyObject = get_taxonomy($term->taxonomy);
 				$taxonomyName = $taxonomyObject->label;
-				$linkTitle  = $taxonomyName." » ".$term->post_title;
+				if ($taxonomyName == "#") {
+					$linkTitle = $taxonomyName."".$term->post_title;
+				} else {
+					$linkTitle = $taxonomyName." » ".$term->post_title;
+				}
+				
 				//$linkTitle  = $term->post_title;
 				// end addition by achapin1@uncc.edu
 				
@@ -547,5 +552,6 @@ class SearchAutocomplete {
 }
 
 register_activation_hook( __FILE__, array( 'SearchAutocomplete', 'activate' ) );
+
 
 $SearchAutocomplete = new SearchAutocomplete();
