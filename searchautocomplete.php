@@ -7,6 +7,11 @@ Version: 2.1.17
 Author: Gabe Shackle & Alex Chapin
 Author URI: http://hereswhatidid.com
 License: GPLv2 or later
+GitHub Plugin URI: https://github.com/clas-web/search-autocomplete
+GitHub Branch: master
+Update URI: https://github.com/clas-web/search-autocomplete
+Primary Branch: main
+Release Asset: true
 */
 
 class SearchAutocomplete {
