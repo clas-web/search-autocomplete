@@ -10,8 +10,7 @@ License: GPLv2 or later
 GitHub Plugin URI: https://github.com/clas-web/search-autocomplete
 GitHub Branch: master
 Update URI: https://github.com/clas-web/search-autocomplete
-Primary Branch: main
-Release Asset: true
+Primary Branch: master
 */
 
 class SearchAutocomplete {
